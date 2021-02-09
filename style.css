@@ -4,7 +4,6 @@ p {
   color: blue;
 }
 
-h1{
-  font: italic;
+p {
+font: italic 1.2em "Fira Sans", serif;
 }
-
