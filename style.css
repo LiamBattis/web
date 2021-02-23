@@ -11,3 +11,9 @@ font: italic 1.2em "Fira Sans", serif;
 p {
  background-color: #74992e; 
 }
+
+.block,
+li {
+  border: 2px solid blue;
+  padding: .5em;
+}
