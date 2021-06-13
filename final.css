@@ -5,3 +5,13 @@ p {
 p {
  background-color: black; 
 }
+
+li {
+ background-color: black; 
+ font: italic;
+ color: red
+}
+
+ul {
+ background-color: black; 
+}
