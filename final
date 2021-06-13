@@ -1,0 +1,50 @@
+<h1> Ecosytem Population Graphing Program </h1>
+
+<ul> Project Description </ul>
+
+<p> My project is a program that takes information on the population numbers of animals in an ecosystem over time and
+graphs them. </p>
+
+<ul> Instructions </ul>
+
+<p> There are already a few population data sets in the program. To see the graphs of the populations, you can run
+the program. If you want to graph your own ecosystem, you can write graph_ecosystem(data_set, n) in the Thonny shell
+where data_set is the data on the populations of animals in your ecosystem and n is the number of animals in the data
+set. Make sure that your data set is in the form-
+<ul>['Year','First Animal','Second Animal','Third Animal','Fourth Animal',Year 1,Animal 1 Year 1 data,Animal 2 year 1 data,Animal 3 Year 1 data,Animal 4 Year 1 data,Year 2,Animal 1 Year 2 data...]</ul>
+Example:
+<ul>['Year','Shark','Turtle','Jellyfish','Shrimp',2000,100,300,1000,4000,2005,75,400,680,7000,2010,50,425,660,7500,2015,87,350,750,6000]</ul>
+(Notice how only the word Year and the names of the animals are strings. Also notice how there are no spaces after each comma. These are easy
+mistakes to make that would mess up the program.
+</p>
+
+<ul> How it Works </ul>
+
+<p> My Project works by taking the inputs from graph_ecosystem and running them through the function plot_graph. Depending on
+the value of n, plot_graph creates n lists, because n = the number of animals in the ecosystem. To fill each list, the function 
+make_y_value is run. make_y_value fills the list by checking if the index of each numeral value of the data_set is 
+divisible by the animal's position in the dataset. If it is, the value is added to the list. This is done for every animal
+in the data set. Then, plot_graph plots (x_value (which has already been created by make_x_value), y_value (which was just 
+created by plot_y_value)). A label is also added to each animal that is plotted. The label is created by turning the xth index
+of the data set into a string, where x is the animal's position in the data set. </p>
+
+
+<ul> Files </ul>
+
+<p> final.html (This webpage)
+final.py (My python program)
+final.css (The style sheet for this webpage)
+</p>
+
+
+<ul> Recources </ul>
+
+<p> I had originally planned on taking data on populations of ecosystems from https://datadryad.org/stash and https://www.gbif.org/.
+However, I was not able to find any data on these websites or anywhere else, so I decided to just make up the data.
+Other than these websites, I did not use any external recources on this project. </p>
+
+<ul> Bugs, Errors, and Things to be Aware of </ul>
+
+<li> If you decide to make your own data set, make sure that you format it just like how the example is formatted above.</li>
+<li> The maximum number of animals you can have in your ecosystem is 5 </li>
+<li> I am not aware of any bugs or errors with the project </li>
