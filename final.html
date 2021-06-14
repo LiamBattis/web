@@ -24,13 +24,14 @@ where data_set is the data on the populations of animals in your ecosystem and n
 
 <li> How it Works </li>
 
-<p> My Project works by taking the inputs from graph_ecosystem and running them through the function plot_graph. Depending on
-the value of n, plot_graph creates n lists, because n = the number of animals in the ecosystem. To fill each list, the function 
+<p> My Project works by taking the data set you want to graph and n, the number of animals in your data set, as inputs and running them through the function plot_graph.
+Depending on the value of n, plot_graph creates n lists, one for each animal. To fill each list, the function 
 make_y_value is run. make_y_value fills the list by checking if the index of each numeral value of the data_set is 
 divisible by the animal's position in the dataset. If it is, the value is added to the list. This is done for every animal
 in the data set. Then, plot_graph plots (x_value (which has already been created by make_x_value), y_value (which was just 
 created by plot_y_value)). A label is also added to each animal that is plotted. The label is created by turning the xth index
-of the data set into a string, where x is the animal's position in the data set. </p>
+of the data set into a string, where x is the animal's position in the data set. This works because the first n + 1 entries in
+the data set is 'Year' and the name of each animal.</p>
 
 
 <li> Files </li>
