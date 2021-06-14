@@ -29,7 +29,7 @@ Depending on the value of n, plot_graph creates n lists, one for each animal. To
 make_y_value is run. make_y_value fills the list by checking if the index of each numeral value of the data_set is 
 divisible by the animal's position in the dataset. If it is, the value is added to the list. This is done for every animal
 in the data set. Then, plot_graph plots (x_value (which has already been created by make_x_value), y_value (which was just 
-created by plot_y_value)). A label is also added to each animal that is plotted. The label is created by turning the xth index
+created by make_y_value)). A label is also added to each animal that is plotted. The label is created by turning the xth index
 of the data set into a string, where x is the animal's position in the data set. This works because the first n + 1 entries in
 the data set is 'Year' and the name of each animal.</p>
 
